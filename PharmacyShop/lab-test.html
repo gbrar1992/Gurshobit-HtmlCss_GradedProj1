@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pharmacy Shop - Lab test</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <main class="lab-test-content">
+            <section class="lab-test-content-area">
+                <div class="left-side">
+                    <form id="labTestForm" method="POST">
+                        <div class="left-side-form">
+                            <div class="form-title w-100"><h1>1. Your Contact Details</h1></div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Full Name" name="fullName" form="labTestForm" type="text" required>
+                            </div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Patient Id (if exists)" name="patienId" form="labTestForm" type="text">
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Contact Number" name="contactNumber" form="labTestForm" type="text" required>
+                            </div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Email Id" name="email" form="labTestForm" type="email" required>
+                            </div>
+                            <div class="form-title w-100"><h1>2. Address</h1></div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="House No." name="houseNumber" form="labTestForm" type="text" required>
+                            </div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Street" name="street" form="labTestForm" type="text" required>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Area" name="area" form="labTestForm" type="text" required>
+                            </div>
+                            <div class="form-element w-50">
+                                <select class="form-field-select" name="choose" form="labTestForm" type="district" required>
+                                    <option value="">Choose District</option>
+                                    <option value="chandiagrh">Chandigarh</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="mumbai">Mumbai</option>
+                                </select>
+                            </div>
+                            <div class="form-title w-100"><h1>3. Test Type</h1></div>
+                            <div class="form-element w-25">
+                                <div class="div-flex">
+                                    <input name="testType[]" form="labTestForm" value="cbc" type="checkbox"> <span>CBC</span>
+                                </div>
+                            </div>
+                            <div class="form-element w-25">
+                                <div class="div-flex">
+                                    <input name="testType[]" form="labTestForm" value="completeUrine" type="checkbox"> <span>Complete Urine</span>
+                                </div>
+                            </div>
+                            <div class="form-element w-25">
+                                <div class="div-flex">
+                                    <input name="testType[]" form="labTestForm" value="lipidProfile " type="checkbox"> <span>Lipid Profile</span>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="form-element w-25">
+                                <div class="div-flex">
+                                    <input name="testType[]" form="labTestForm" value="tsh" type="checkbox"> <span>Thyroid Stimulating Hormone</span>
+                                </div>
+                            </div>
+                            <div class="form-element w-25">
+                                <div class="div-flex">
+                                    <input name="testType[]" form="labTestForm" value="glucoseTest" type="checkbox"> <span>Glucose Test</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-title w-100"><h1>4. Need Report Hard Copy</h1></div>
+                            <div class="form-element w-50">
+                                <div class="div-flex">
+                                    <input name="needReport" form="labTestForm" value="yes" type="radio"> <span>Yes</span>
+                                </div>
+                            </div>
+                            <div class="form-element w-50">
+                                <div class="div-flex">
+                                    <input name="needReport" form="labTestForm" value="no" type="radio"> <span>No</span>
+                                </div>
+                            </div>
+                            <div class="form-title w-100"><h1>5. Test Date/Time</h1></div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Date" name="date" form="labTestForm" type="date" required>
+                            </div>
+                            <div class="form-element w-50">
+                                <input class="form-field" placeholder="Date" name="time" form="labTestForm" type="time" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-side"></div>
+            </section>
+            <section class="lab-test-buttons-area">
+                <button class="lab-test-button mr-1" form="labTestForm" type="reset">Reset</button>
+                <button class="lab-test-button" form="labTestForm" type="submit">Submit</button>
+            </section>
+        </main>
+    </body>
+ </html>   
